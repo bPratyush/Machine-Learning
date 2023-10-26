@@ -1,1 +1,2 @@
 Learnt making Decoder only Generative Pre-Trained Transformer. Influenced from https://arxiv.org/abs/1706.03762
+Uses the Bigram Model with texts from Shakespeare as the Dataset
