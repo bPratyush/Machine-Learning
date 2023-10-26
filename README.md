@@ -1,4 +1,4 @@
 # Machine Learning
-This repo aims to cover topics learnt from www.learnpytorch.io, stylizing based on my comments, and trying out new models.
+This repo aims to cover all the topics I have learned while studying Machine Learning.
 
-**I have also made some random projects. Check them out!**
+**I have also done some random projects. Do Check them out!**
