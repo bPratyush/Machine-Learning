@@ -1,0 +1,91 @@
+digraph {
+	graph [size="12,12"]
+	node [align=left fontname=monospace fontsize=10 height=0.2 ranksep=0.1 shape=box style=filled]
+	5489087824 [label="
+ (1, 1)" fillcolor=darkolivegreen1]
+	5488744800 [label=AddmmBackward0]
+	5488744944 -> 5488744800
+	5489086576 [label="fc.bias
+ (1)" fillcolor=lightblue]
+	5489086576 -> 5488744944
+	5488744944 [label=AccumulateGrad]
+	5488744992 -> 5488744800
+	5488744992 [label=ViewBackward0]
+	5488745088 -> 5488744992
+	5488745088 [label=MulBackward0]
+	5488745712 -> 5488745088
+	5488745712 [label=SigmoidBackward0]
+	5488746480 -> 5488745712
+	5488746480 [label=ConvolutionBackward0]
+	5488746576 -> 5488746480
+	5488746576 [label=CatBackward0]
+	5488746720 -> 5488746576
+	5488746720 [label=MeanBackward1]
+	5488745664 -> 5488746720
+	5488745664 [label=MulBackward0]
+	5488747008 -> 5488745664
+	5488747008 [label=SigmoidBackward0]
+	5488747200 -> 5488747008
+	5488747200 [label=AddBackward0]
+	5488747344 -> 5488747200
+	5488747344 [label=ConvolutionBackward0]
+	5488743936 -> 5488747344
+	5488743936 [label=ReluBackward0]
+	5488749840 -> 5488743936
+	5488749840 [label=ConvolutionBackward0]
+	5488749744 -> 5488749840
+	5488749744 [label=MeanBackward1]
+	5488746768 -> 5488749744
+	5488746768 [label=ReluBackward0]
+	5488749552 -> 5488746768
+	5488749552 [label=ConvolutionBackward0]
+	5488746384 -> 5488749552
+	5489086000 [label="conv1.weight
+ (64, 1, 3, 3)" fillcolor=lightblue]
+	5489086000 -> 5488746384
+	5488746384 [label=AccumulateGrad]
+	5488746432 -> 5488749552
+	5489086096 [label="conv1.bias
+ (64)" fillcolor=lightblue]
+	5489086096 -> 5488746432
+	5488746432 [label=AccumulateGrad]
+	5488749792 -> 5488749840
+	5489086192 [label="cbam1.ca.fc1.weight
+ (4, 64, 1, 1)" fillcolor=lightblue]
+	5489086192 -> 5488749792
+	5488749792 [label=AccumulateGrad]
+	5488743984 -> 5488747344
+	5489086288 [label="cbam1.ca.fc2.weight
+ (64, 4, 1, 1)" fillcolor=lightblue]
+	5489086288 -> 5488743984
+	5488743984 [label=AccumulateGrad]
+	5488747296 -> 5488747200
+	5488747296 [label=ConvolutionBackward0]
+	5488743888 -> 5488747296
+	5488743888 [label=ReluBackward0]
+	5488749696 -> 5488743888
+	5488749696 [label=ConvolutionBackward0]
+	5488746336 -> 5488749696
+	5488746336 [label=AdaptiveMaxPool2DBackward0]
+	5488746768 -> 5488746336
+	5488749792 -> 5488749696
+	5488743984 -> 5488747296
+	5488746768 -> 5488745664
+	5488746672 -> 5488746576
+	5488746672 [label=MaxBackward0]
+	5488745664 -> 5488746672
+	5488746528 -> 5488746480
+	5489086384 [label="cbam1.sa.conv1.weight
+ (1, 2, 7, 7)" fillcolor=lightblue]
+	5489086384 -> 5488746528
+	5488746528 [label=AccumulateGrad]
+	5488745664 -> 5488745088
+	5488745040 -> 5488744800
+	5488745040 [label=TBackward0]
+	5488745952 -> 5488745040
+	5489086480 [label="fc.weight
+ (1, 640000)" fillcolor=lightblue]
+	5489086480 -> 5488745952
+	5488745952 [label=AccumulateGrad]
+	5488744800 -> 5489087824
+}
