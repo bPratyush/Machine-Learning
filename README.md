@@ -1,4 +1,2 @@
 # Machine Learning
-This repo aims to cover all the topics I have learned while studying Machine Learning.
-
-**I have also done some random projects. Do Check them out!**
+This repo aims to cover some random projects that I have done. Do Check them out!
